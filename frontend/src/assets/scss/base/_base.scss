@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    // font: inherit;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+	font-family: 'Montserrat',sans-serif;
+	// font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+	// font-family: Montserrat;
+	// font-family: Roboto ;
+	background-color: $background-color;
+	color: set-text-color($background-color);
+	min-height: 100vh;
+	overflow-x: hidden;
+	position: relative;
+	// word-wrap: break-word;
+
+	font-size: 1rem;
+	font-weight: 400;
+    line-height: 1.525;
+	min-height: 200vh;
+}
+
+small {
+	opacity: 0.9;
+	font-size: 0.75em;
+}
+
+// main.photo-main {
+// 	position: absolute;
+// 	top: 0;
+// }

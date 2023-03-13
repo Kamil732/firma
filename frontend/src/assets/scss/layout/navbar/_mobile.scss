@@ -1,0 +1,60 @@
+.navbar {
+    background-color: $light-color;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid $grey-color;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    &__btn {
+        cursor: pointer;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        transform: scaleY(1);
+        transform-origin: 100% 0;
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 99%;
+        list-style-type: none;
+        background-color: $light-color;
+        border-bottom: 1px solid $grey-color;
+        padding-bottom: 0.5rem;
+
+
+        &.hide {
+            transform: scaleY(0);
+        }
+
+        &__item {
+            cursor: pointer;
+            padding: 0.6rem;
+            text-align: center;
+
+            & > a {
+                color: set-text-color($light-color);
+                font-weight: 800;
+                font-size: 0.85em;
+                opacity: 0.9;
+                text-transform: uppercase;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+
+            &:hover > a {
+                color: $primary-color;
+            }
+        }
+    }
+}
