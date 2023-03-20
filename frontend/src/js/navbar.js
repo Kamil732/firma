@@ -12,7 +12,7 @@ navbarBtn.addEventListener('click', () => {
 
 window.onload = () => {
 	document.addEventListener('scroll', () => {
-		if (window.scrollY > 0) navbar.classList.remove('photo')
+		if (window.scrollY >  0) navbar.classList.remove('photo')
 		else navbar.classList.add('photo')
 	})
 

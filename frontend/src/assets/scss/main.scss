@@ -12,6 +12,7 @@
 @include media-tablet {
     @import './layout/navbar/tablet';
     @import './layout/photoslider/tablet';
+    @import './layout/about-table/tablet';
 }
 
 @include media-laptop {
