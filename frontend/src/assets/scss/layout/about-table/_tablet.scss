@@ -10,7 +10,9 @@
         }
 
         td {
+            display: table-cell;
             border-right: 1px solid $grey-color;
+            border-bottom: none;
             padding: 70px 40px;
             text-align: center;
 
