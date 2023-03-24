@@ -1,0 +1,16 @@
+.sponsors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100vw;
+    padding: 3rem 5rem;
+    background-color: $grey-color;
+
+    & > img {
+        display: block;
+        width: auto;
+        height: 5rem;
+    }
+}

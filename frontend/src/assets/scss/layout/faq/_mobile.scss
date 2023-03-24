@@ -1,0 +1,26 @@
+.faq {
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 10%;
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+
+    h2 {
+        font-family: Abril Fatface;
+        font-weight: 900;
+        font-size:2.1em;
+    }
+
+    &__bg {
+        z-index: -1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: auto;
+    }
+}

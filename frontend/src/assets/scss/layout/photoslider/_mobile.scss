@@ -31,6 +31,7 @@
 
 .description {
     font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .subtitle {
@@ -54,5 +55,7 @@
 }
 
 .underphoto {
-    margin-top: 95vh;
+    height: 100vh;
+    width: 100vw;
+    background-color: $light-color;
 }

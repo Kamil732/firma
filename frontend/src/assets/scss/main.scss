@@ -8,7 +8,8 @@
 @import './layout/button/mobile';
 @import './layout/photoslider/mobile';
 @import './layout/about-table/mobile';
-
+@import './layout/faq/mobile';
+@import './layout/card/mobile';
 
 @include media-tablet {
     @import './layout/navbar/tablet';

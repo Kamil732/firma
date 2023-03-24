@@ -13,7 +13,7 @@
         cursor: pointer;
     }
 
-    &__container {
+    &__container, &__container > a {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -52,7 +52,7 @@
                 transition: color 0.3s ease;
             }
 
-            &:hover > a {
+            &:hover > a, & > a:focus, & > a.active {
                 color: $primary-color;
             }
         }

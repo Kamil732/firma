@@ -46,7 +46,7 @@
                     transition: transform 250ms ease-in-out;
                 }
 
-                &:hover::after {
+                &:hover::after, &:focus::after, &.active::after {
                     transform: scaleX(1);
                 }
             }

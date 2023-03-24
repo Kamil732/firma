@@ -1,14 +1,13 @@
 .about-table {
-    border-collapse: collapse;
-    margin: 12%;
+    margin: 0 12%;
 
     tr {
         td {
             display: block;
-            // width: 100%;
             border-bottom: 1px solid $grey-color;
             padding: 70px 40px;
             text-align: center;
+            font-family: 'Roboto', sans-serif;s
 
             & > img {
                 height: 4rem;
