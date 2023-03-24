@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@600&family=Roboto:wght@300;700&display=swap');
+
 @import './abstract/variables';
-@import './abstract//config';
+@import './abstract/config';
 
 @import './base/utilities';
 @import './base/base';
@@ -10,6 +12,7 @@
 @import './layout/about-table/mobile';
 @import './layout/faq/mobile';
 @import './layout/card/mobile';
+@import './layout/footer/mobile';
 
 @include media-tablet {
     @import './layout/navbar/tablet';
