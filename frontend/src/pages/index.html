@@ -7,40 +7,38 @@
     <title>Instagram Marketing</title>
 
     <script src="https://kit.fontawesome.com/7faeb11aa3.js" crossorigin="anonymous"></script>
-    <script src="../js/navbar.js" defer></script>
+    <script src="../js/navbar_photo.js" defer></script>
     <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
-    <nav class="navbar photo" id="navbar">
+    <header class="navbar photo" id="navbar">
         <div class="navbar__container">
             <a href="#">
                 <img src="../assets/imgs/instamarketing.png" width="160" height="40" alt="Mango" />
             </a>
-            <!-- <span>Instagram</span> -->
 
             <i class="fas fa-bars navbar__btn" style="font-size: 2rem;" id="navbar-btn"></i>
         </div>
-        <ul class="navbar__menu hide" id="navbar-menu">
-            <li class="navbar__menu__item">
-                <a href="#program">cennik</a>
-            </li>
-            <li class="navbar__menu__item">
-                <a href="#program">Rabaty</a>
-            </li>
-            <li class="navbar__menu__item">
-                <a href="#program">Opinie</a>
-            </li>
-            <li class="navbar__menu__item">
-                <a href="./gallery.html">Galeria</a>
-            </li>
-            <li class="navbar__menu__item">
-                <a href="./contact.html">Kontakt</a>
-            </li>
-        </ul>
-    </nav>
+        <nav>
+            <ul class="navbar__menu hide" id="navbar-menu">
+                <li class="navbar__menu__item">
+                    <a href="./about.html">O nas</a>
+                </li>
+                <li class="navbar__menu__item">
+                    <a href="./job.html">Praca</a>
+                </li>
+                <li class="navbar__menu__item">
+                    <a href="./gallery.html">Galeria</a>
+                </li>
+                <li class="navbar__menu__item">
+                    <a href="./contact.html">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-        <div class="photo-slider">
+        <figure class="photo-slider">
             <img src="../assets/imgs/instgramapp.png" alt="Instagramie"  />
 
             <div class="photo-slider__text">
@@ -49,9 +47,9 @@
                     <span class="underline">INSTA</span>GRAMIE
                 </h2>
                 <p class="description">trakcyjna oferta na każdą kieszeń - zarówno dla osób fizycznych jak i marek chcących "rozpędzić" swojego Instagrama.</p>
-                <button style="margin-top: 35px;" class="btn">Sprawdź >></button>
+                <a href="#" style="margin-top: 35px;" class="btn">Sprawdź >></a>
             </div>
-        </div>
+        </figure>
         <div class="underphoto"></div>
 
         <section class="bg">
@@ -109,31 +107,31 @@
                 </tr>
             </table>
         </section>
-        <div class="faq">
+        <section class="faq">
             <img class="faq__bg" src="../assets/imgs/team-parallex.png.webp" alt="" />
 
-            <div class="card">
+            <article class="card">
                 <img class="card__img" src="../assets/imgs/influencer.webp" alt="" />
                 <h2>Jak zostać influencerem?</h2>
                 <p class="card__text">
                     Sprawdź jakie kryteria należy spełnić aby dołączyć do grona influencerów InstaMarketing i zarabiać na swoim profilu Instagram.
                 </p>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <img class="card__img" src="../assets/imgs/reklamowanie.webp" alt="" />
                 <h2>Jak zostać reklamodawcą?</h2>
                 <p class="card__text">
                     Szukasz skutecznej i nienachalnej reklamy dobrze dopasowanej do odbiorców? Sprawdź w jakis sposób możemy współpracować.
                 </p>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <img class="card__img" src="../assets/imgs/marketing.webp" alt="" />
                 <h2>Poznaj naszych influencerów!</h2>
                 <p class="card__text">
                     Sprawdź aktualną listę (katalog) influencerów współpracujących z InstaMarketing w zakresie Influencer Marketingu.
                 </p>
-            </div>
-        </div>
+            </article>
+        </section>
         <section class="sponsors">
             <img src="../assets/imgs/sponsor.webp" width="222" height="96"/>
             <img src="../assets/imgs/sponsor2.webp" width="222" height="96"/>

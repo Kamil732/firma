@@ -1,0 +1,13 @@
+.about {
+    flex-direction: row;
+
+    &__title {
+        font-size: 3em;
+        margin: 2rem 0;
+    }
+
+    div, picture {
+        // flex: 0 0 50%;
+        max-width: 50%;
+    }
+}

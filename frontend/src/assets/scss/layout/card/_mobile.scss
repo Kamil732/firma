@@ -2,4 +2,9 @@
     background-color: $light-color;
     border-radius: 6px;
     padding: 2rem 1rem;
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
 }

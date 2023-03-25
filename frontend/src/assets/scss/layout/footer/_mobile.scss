@@ -8,11 +8,11 @@
     &__body {
         display: flex;
         justify-content: space-around;
+        flex-direction: column;
         gap: 1.5rem;
         line-height: 2;
 
         & > div {
-            max-width: 20%;
             font-size: 0.98em;
 
             & > h2, & > h3 {
@@ -39,7 +39,7 @@
 .marketing {
     background-color: $light-color;
     color: #000;
-    padding: 2px 4px;
+    padding: 2px;
     margin-right: 2px;
     font-weight: 800;
 }

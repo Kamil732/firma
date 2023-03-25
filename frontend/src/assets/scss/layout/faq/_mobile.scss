@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 1.5rem;
     padding: 10%;
@@ -20,6 +21,7 @@
         top: 0;
         left: 0;
         width: 100vw;
-        height: auto;
+        height: 110vh;
+        object-fit: cover;
     }
 }

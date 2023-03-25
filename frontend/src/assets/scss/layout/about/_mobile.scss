@@ -1,0 +1,51 @@
+.about {
+    background-color: $grey-color;
+    padding: 0 10%;
+    padding-top: 5rem;
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 150px;
+
+    &__title {
+        margin: 1rem 0;
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+
+    p {
+        font-size: 1.1em;
+        font-family: Roboto;
+    }
+
+    &__img {
+        margin-bottom: -80px;
+        height: auto;
+    }
+}
+
+.pros {
+    padding: 0 10%;
+
+    &__body {
+        padding: 4rem 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        overflow-x: auto;
+    }
+
+    &__item {
+        & > h1 {
+            color: $primary-color;
+            font-size: 5em;
+            font-weight: 900;
+        }
+
+        & > h3 {
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+    }
+}

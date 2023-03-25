@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@600&family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@600&family=Montserrat:wght@300;500;700;800&family=Roboto:wght@300;700&display=swap');
 
 @import './abstract/variables';
 @import './abstract/config';
@@ -14,16 +14,21 @@
 @import './layout/card/mobile';
 @import './layout/footer/mobile';
 
+@import './layout/about/mobile';
+
 @include media-tablet {
     @import './layout/navbar/tablet';
     @import './layout/photoslider/tablet';
     @import './layout/about-table/tablet';
+    @import './layout/footer/tablet';
+    @import './layout/about/tablet';
 }
 
 @include media-laptop {
-
+    @import './layout/faq/laptop';
 }
 
 @include media-laptop-lg {
+    @import './layout/about/laptop-lg';
 
 }

@@ -1,0 +1,9 @@
+.footer {
+    &__body {
+        flex-direction: row;
+
+        & > div {
+            max-width: 20%;
+        }
+    }
+}

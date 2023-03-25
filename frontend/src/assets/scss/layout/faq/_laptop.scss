@@ -1,0 +1,9 @@
+.faq {
+    flex-direction: row;
+
+    &__bg {
+        width: 100vw;
+        height: auto;
+        object-fit: fill
+    }
+}

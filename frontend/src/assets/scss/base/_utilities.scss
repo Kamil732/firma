@@ -1,16 +1,29 @@
 .sponsors {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
     width: 100vw;
     padding: 3rem 5rem;
     background-color: $grey-color;
+    overflow-x: auto;
 
     & > img {
         display: block;
         width: auto;
         height: 5rem;
     }
+}
+
+.primary-text {
+    color: $primary-color;
+    font-size: 0.95em;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }

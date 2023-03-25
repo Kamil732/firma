@@ -11,6 +11,11 @@ navbarBtn.addEventListener('click', () => {
 })
 
 window.onload = () => {
+	document.addEventListener('scroll', () => {
+		if (window.scrollY > 0) navbar.classList.remove('photo')
+		else navbar.classList.add('photo')
+	})
+
 	document.onclick = (e) => {
 		if (e.target.id != NAVBAR_MENU && e.target.id != NAVBAR_BTN) {
 			//element clicked wasn't the div; hide the div
