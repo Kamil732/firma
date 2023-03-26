@@ -6,6 +6,23 @@
 	}
 }
 
+@mixin sliding-floor($after-padding-top: 0) {
+	display: inline-block;
+
+	&::after {
+        display:block;
+        content: '';
+        border-bottom: solid 3px lighten($primary-color, 15%);
+        transform: scaleX(0);
+		padding-top: $after-padding-top;
+        transition: transform 250ms ease-in-out;
+    }
+
+    &:hover::after, &:focus::after, &.active::after {
+        transform: scaleX(1);
+    }
+}
+
 @mixin shadow-sm {
 	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }

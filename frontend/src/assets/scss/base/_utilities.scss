@@ -27,3 +27,10 @@
     height: auto;
     display: block;
 }
+
+.link {
+    color: $primary-color;
+    font-weight: 500;
+
+    @include sliding-floor;
+}

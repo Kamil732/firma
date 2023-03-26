@@ -15,6 +15,7 @@
 @import './layout/footer/mobile';
 
 @import './layout/about/mobile';
+@import './layout/gallery/mobile';
 
 @include media-tablet {
     @import './layout/navbar/tablet';
@@ -30,5 +31,5 @@
 
 @include media-laptop-lg {
     @import './layout/about/laptop-lg';
-
+    @import './layout/gallery/laptop-lg';
 }
