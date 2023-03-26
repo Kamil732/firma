@@ -34,3 +34,9 @@
 
     @include sliding-floor;
 }
+
+.inline {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}

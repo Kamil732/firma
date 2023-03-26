@@ -16,6 +16,8 @@
 
 @import './layout/about/mobile';
 @import './layout/gallery/mobile';
+@import './layout/job/mobile';
+@import './layout/contact/mobile';
 
 @include media-tablet {
     @import './layout/navbar/tablet';
@@ -32,4 +34,6 @@
 @include media-laptop-lg {
     @import './layout/about/laptop-lg';
     @import './layout/gallery/laptop-lg';
+    @import './layout/job/laptop-lg';
+    @import './layout/contact/laptop-lg';
 }

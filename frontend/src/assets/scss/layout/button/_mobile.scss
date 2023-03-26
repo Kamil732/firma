@@ -14,4 +14,13 @@
         background-color: $primary-color-hover;
         color: set-text-color($primary-color-hover);
     }
+
+    &.secondary {
+        background-color: $secondary-color;
+
+        &:hover {
+            background-color: $secondary-color-hover;
+            color: set-text-color($secondary-color-hover);
+        }
+    }
 }

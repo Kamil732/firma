@@ -28,7 +28,55 @@
         </nav>
     </nav>
 
-    <main></main>
+    <main class="job">
+        <h1 class="job__title">Poszukujemy <span class="job__primary underline">INSTA</span> Influencerów!</h1>
+        <p>Szukamy nowych influencerów co mogliby dać od siebie coś nowego dla naszego społeczeństwa. Pracując z nami, będziesz tworzyć ciekawe i angażujące treści, prowadzić kampanie reklamowe, a także monitorować wyniki i dostosowywać strategię w oparciu o uzyskane dane</p>
+
+        <form class="job__form">
+            <div class="inline">
+                <div class="job__form__field">
+                    <input type="text" required name="name" id="name" />
+                    <label class="job__form__label" for="name">Imię i nazwisko</label>
+                </div>
+                <div class="job__form__field">
+                    <input type="email" required name="email" id="email" />
+                    <label class="job__form__label" for="email">Email adres</label>
+                </div>
+            </div>
+            <div class="inline">
+                <div class="job__form__field">
+                    <input type="number" required name="age" id="age" min="18" />
+                    <label class="job__form__label" for="age">Wiek</label>
+                </div>
+                <div class="job__form__field">
+                    <select name="gender" id="gender" required>
+                        <option disabled value hidden selected></option>
+                        <option value="man">Mężczyzna</option>
+                        <option value="woman">Kobieta</option>
+                    </select>
+                    <label class="job__form__label" for="gender">Płeć</label>
+                </div>
+            </div>
+            <div class="job__form__field">
+                <select name="education" id="education" required>
+                    <option disabled value hidden selected></option>
+                    <option value="basic">Podstawowe</option>
+                    <option value="colague">Średnie</option>
+                    <option value="bachelors">Wyższe</option>
+                </select>
+                <label class="job__form__label" for="education">Wykształcenie</label>
+            </div>
+            <div class="job__form__field">
+                <label for="questions">Uwagi odnośnie pracy:</label>
+                <textarea name="questions" id="questions"></textarea>
+            </div>
+
+            <div class="inline" style="justify-content: space-between;">
+                <button class="btn secondary" type="reset">Wyczyść</button>
+                <button class="btn" type="submit">Wyślij</button>
+            </div>
+        </form>
+    </main>
 
     <footer class="footer">
         <div class="footer__body">
