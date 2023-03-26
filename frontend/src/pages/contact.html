@@ -30,6 +30,64 @@
 
     <main class="contact">
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2497.3003277645585!2d21.068435515760463!3d51.25037947959374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471843a3aabb8f8d%3A0x5d6ac968d0675d31!2sBiedronka!5e0!3m2!1spl!2spl!4v1679856435671!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="contact__text">
+            <p class="primary-text" style="margin-bottom: 1rem; font-size: 0.8em;">BĄDŹMY W KONTAKCIE</p>
+            <h1 class="contact__title">POTRZEBUJESZ POMOCY?</h1>
+            <h1 class="contact__title contact__primary">POROZMAWIAJMY!</h1>
+            <p>
+                Spotkajmy się i omówmy interesujące Cię zagadnienia z zakresu marketingu w internecie. W celu umówienia spotkania skontaktuj się z nami za pośrednictwem poniższego formularza lub telefonicznie.
+            </p>
+        </section>
+        <section class="contact__body">
+            <div class="contact__info">
+                <div>
+                    <h2>DANE FIRMY</h2>
+                    <p>NIP: 1231231239</p>
+                    <p>REGON: 394532645</p>
+                </div>
+                <div>
+                    <h2>LOKALIZACJA</h2>
+                    <p>26-680 Wierzbica</p>
+                    <p>ul. Żeromskiego 69/42</p>
+                </div>
+                <div>
+                    <h2>DANE KONTAKTOWE</h2>
+                    <p>Tel.: +48 123 123 123</p>
+                    <p>Email: email@gamil.com</p>
+                </div>
+                <div>
+                    <h2>GODZIYNY PRACY</h2>
+                    <p>Pon. - Pt.: 9.00 - 17.00</p>
+                </div>
+            </div>
+            <div style="width: 70%;">
+                <form class="form">
+                    <div class="inline">
+                        <div class="form__field">
+                            <input type="text" required name="name" id="name" />
+                            <label class="form__label" for="name">Imię i nazwisko</label>
+                        </div>
+                        <div class="form__field">
+                            <input type="email" required name="email" id="email" />
+                            <label class="form__label" for="email">Email adres</label>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <input type="text" required name="title" id="title" />
+                        <label class="form__label" for="title">Tytuł wiadomości</label>
+                    </div>
+                    <div class="form__field">
+                        <label for="message">Wiadomość:</label>
+                        <textarea name="message" id="message" rows="50" required></textarea>
+                    </div>
+
+                    <div class="inline" style="justify-content: space-between;">
+                        <button class="btn secondary" type="reset">Wyczyść</button>
+                        <button class="btn" type="submit">Wyślij</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">

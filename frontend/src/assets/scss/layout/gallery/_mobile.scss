@@ -58,7 +58,7 @@
             }
 
             & > p {
-                color: lighten($primary-color, 10%);
+                color: $primary-color;
                 font-weight: 600;
                 font-size: 0.85em;
             }
