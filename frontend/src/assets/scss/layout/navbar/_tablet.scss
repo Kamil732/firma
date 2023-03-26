@@ -19,6 +19,7 @@
         align-items: center;
         justify-content: center;
         gap: 1rem;
+        flex-direction: row;
 
         &.hide {
             transform: none;
@@ -33,7 +34,7 @@
         .navbar__menu {
             background-color: transparent;
 
-            .navbar__menu__item > a {
+            .navbar__menu__item {
                 color: $light-color;
                 display:inline-block;
 

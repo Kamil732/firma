@@ -31,6 +31,8 @@
         background-color: $light-color;
         border-bottom: 1px solid $grey-color;
         padding-bottom: 0.5rem;
+        display: flex;
+        flex-direction: column;
 
 
         &.hide {
@@ -41,18 +43,15 @@
             cursor: pointer;
             padding: 0.6rem;
             text-align: center;
+            color: set-text-color($light-color);
+            font-weight: 800;
+            font-size: 0.85em;
+            opacity: 0.9;
+            text-transform: uppercase;
+            // text-decoration: none;
+            transition: color 0.3s ease;
 
-            & > a {
-                color: set-text-color($light-color);
-                font-weight: 800;
-                font-size: 0.85em;
-                opacity: 0.9;
-                text-transform: uppercase;
-                text-decoration: none;
-                transition: color 0.3s ease;
-            }
-
-            &:hover > a, & > a:focus, & > a.active {
+            &:hover, &:focus, &.active {
                 color: $primary-color;
             }
         }
