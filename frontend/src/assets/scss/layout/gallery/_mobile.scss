@@ -13,18 +13,70 @@
 
     &__item {
         grid-column: auto / span 2;
-        transition: transform 0.3s ease;
+        background-color: rgba(10,10,10,.55);
         @include shadow-md;
 
-        &:hover {
-            transform: scale(1.03);
-        }
-
-        & > img {
+        & > figure {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            position: relative;
+            overflow: hidden;
 
+            & > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: filter 0.5s ease, transform 0.5s ease;
+            }
+        }
+
+        &__bg {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(10,10,10,.55);
+            transition: opacity 0.5s ease;
+        }
+
+        &__description {
+            opacity: 0;
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            z-index: 2;
+            color: #fff;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            text-align: left;
+            transform: translateY(1.5rem);
+
+            & > h2 {
+                font-size: 1.25em;
+                text-transform: uppercase;
+            }
+
+            & > p {
+                color: lighten($primary-color, 10%);
+                font-weight: 600;
+                font-size: 0.85em;
+            }
+        }
+
+        &:hover {
+            .gallery__item__bg {
+                opacity: 1;
+            }
+
+            .gallery__item__description {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            & > figure > img {
+                transform: scale(1.2);
+            }
         }
 
         &:nth-child(1) {
